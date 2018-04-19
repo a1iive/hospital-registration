@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.19540229885057472" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="350.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.ghController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+      <children>
+        <Label layoutX="237.0" layoutY="16.0" prefHeight="28.0" prefWidth="124.0" text="门 诊 挂 号" textFill="#5c0a41">
+          <font>
+            <Font name="Arial" size="24.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="308.0" prefWidth="598.0">
+      <children>
+        <Label layoutX="64.0" layoutY="81.0" text="号种类别">
+          <font>
+            <Font name="Arial Bold" size="15.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="66.0" layoutY="36.0" text="科室名称" />
+        <Label font="$x1" layoutX="322.0" layoutY="36.0" text="医生姓名" />
+        <Label font="$x1" layoutX="321.0" layoutY="81.0" text="号种名称" />
+        <Label font="$x1" layoutX="64.0" layoutY="128.0" text="交款金额" />
+        <Label font="$x1" layoutX="322.0" layoutY="128.0" text="应缴金额" />
+        <Button fx:id="button1" layoutX="124.0" layoutY="199.0" mnemonicParsing="false" onAction="#eventbutton1" text="确定">
+          <font>
+            <Font name="System Bold" size="15.0" fx:id="x2" />
+          </font>
+        </Button>
+        <Button fx:id="button2" font="$x2" layoutX="222.0" layoutY="199.0" mnemonicParsing="false" onAction="#eventbutton2" text="清除" />
+        <Button fx:id="button3" font="$x2" layoutX="312.0" layoutY="199.0" mnemonicParsing="false" onAction="#eventbutton3" text="退号" />
+        <Button fx:id="button4" font="$x2" layoutX="408.0" layoutY="199.0" mnemonicParsing="false" onAction="#eventbutton4" text="退出" />
+        <TextField fx:id="KSMC" layoutX="129.0" layoutY="34.0" prefHeight="22.0" prefWidth="157.00009999999747" />
+        <TextField fx:id="YSXM" layoutX="386.0" layoutY="34.0" prefWidth="156.0" />
+        <TextField fx:id="HZLB" layoutX="129.0" layoutY="79.0" prefWidth="157.0" />
+        <TextField fx:id="HZMC" layoutX="386.0" layoutY="79.0" prefWidth="156.0" />
+        <TextField fx:id="JKJE" layoutX="128.0" layoutY="124.0" prefHeight="21.000099999997474" prefWidth="157.0" />
+        <TextField fx:id="YJJE" editable="true" layoutX="386.0" layoutY="126.0" prefWidth="156.0" />
+      </children>
+    </AnchorPane>
+  </items>
+</SplitPane>

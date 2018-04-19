@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="282.9999915527369" minWidth="379.9996558593775" prefHeight="282.9999915527369" prefWidth="412.9996558593775" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.loginController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane dividerPositions="0.18505338634588842" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="318.9999000000025" prefWidth="418.9999000000025" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+      <items>
+        <AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="417.0">
+          <children>
+            <Label layoutX="156.0" layoutY="0.0" prefHeight="49.0" prefWidth="100.0" text="病人登陆" textAlignment="LEFT" textFill="#0029ff">
+              <font>
+                <Font size="24.0" />
+              </font>
+            </Label>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="240.0" prefWidth="417.0">
+          <children>
+            <Label layoutX="79.0" layoutY="45.0" prefHeight="24.5" prefWidth="76.0" text="病人编号：">
+              <font>
+                <Font name="Arial Bold" size="15.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label font="$x1" layoutX="107.0" layoutY="100.0" prefWidth="48.0" text="密码：" textAlignment="RIGHT" />
+            <TextField fx:id="name" layoutX="155.0" layoutY="45.0" prefWidth="172.0" />
+            <PasswordField fx:id="passward" layoutX="155.0" layoutY="96.0" prefWidth="172.0" />
+            <Button fx:id="button1" layoutX="79.0" layoutY="171.0" mnemonicParsing="false" onAction="#eventbutton1" text="确定">
+              <font>
+                <Font size="15.0" fx:id="x2" />
+              </font>
+            </Button>
+            <Button fx:id="button2" font="$x2" layoutX="182.0" layoutY="171.0" mnemonicParsing="false" onAction="#eventbutton2" text="清除" />
+            <Button fx:id="button3" font="$x2" layoutX="284.0" layoutY="171.0" mnemonicParsing="false" onAction="#eventbutton3" text="退出" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>

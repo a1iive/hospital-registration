@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="278.0" prefWidth="378.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.tuihaoController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane dividerPositions="0.22826086956521738" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="235.0" prefWidth="304.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="114.0" prefWidth="376.0">
+          <children>
+            <Label layoutX="157.0" layoutY="7.0" prefHeight="46.0" prefWidth="62.0" text="退 号" textFill="#990049">
+              <font>
+                <Font name="Arial Bold" size="26.0" />
+              </font>
+            </Label>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <Button fx:id="button1" layoutX="65.0" layoutY="169.0" mnemonicParsing="false" onAction="#eventbutton1" text="确定">
+              <font>
+                <Font name="System Bold" size="15.0" fx:id="x1" />
+              </font>
+            </Button>
+            <Button fx:id="button2" font="$x1" layoutX="259.0" layoutY="169.0" mnemonicParsing="false" onAction="#eventbutton2" text="退出" />
+            <TableView fx:id="TableView" layoutX="0.0" layoutY="0.0" prefHeight="154.0" prefWidth="376.0" style="">
+              <columns>
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="127.0" text="挂号编号" fx:id="GHBH" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="126.0" text="号种编号" fx:id="HZBH" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="121.0" text="医生编号" fx:id="YSBH" />
+              </columns>
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </TableView>
+            <Button id="button1" fx:id="button3" font="$x1" layoutX="160.0" layoutY="169.0" mnemonicParsing="false" onAction="#eventbutton3" text="刷新" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
