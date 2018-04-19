@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="363.999977929685" prefWidth="531.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.listshowController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane dividerPositions="0.12430939984405419" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="363.999977929685" prefWidth="531.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="52.0" prefWidth="530.0">
+          <children>
+            <Label layoutX="223.0" layoutY="1.0" prefHeight="45.0" prefWidth="85.0" text="医生系统" textFill="#cc0062">
+              <font>
+                <Font name="System Bold" size="20.0" />
+              </font>
+            </Label>
+            <Button id="button" fx:id="button0" layoutX="445.0" layoutY="7.0" mnemonicParsing="false" onAction="#eventbutton0" prefHeight="33.0" prefWidth="70.99990000000253" text="退出" textFill="#103300">
+              <font>
+                <Font name="System Bold" size="15.0" />
+              </font>
+            </Button>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="306.0" prefWidth="518.0">
+          <children>
+            <TabPane prefHeight="276.0" prefWidth="530.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                <Tab text="病人列表">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Button id="button" fx:id="button1" layoutX="459.0" layoutY="256.0" minHeight="24.0" mnemonicParsing="false" onAction="#eventbutton1" prefHeight="24.0" prefWidth="60.0" text="刷新">
+                          <font>
+                            <Font name="System Bold" size="12.0" fx:id="x1" />
+                          </font>
+                        </Button>
+                        <TableView fx:id="tableview1" layoutX="0.0" layoutY="0.0" prefHeight="247.0" prefWidth="530.0">
+                          <columns>
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="102.0" text="挂号编号" fx:id="GHBH1" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="108.0" text="病人名称" fx:id="BRMC1" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="217.0" text="挂号日期时间" fx:id="GHRQ1" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="102.0" text="号种类别" fx:id="HZLB1" />
+                          </columns>
+                        </TableView>
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="收入列表">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Label layoutX="46.0" layoutY="231.0" prefHeight="22.0" prefWidth="70.0" text="起始日期：">
+                          <font>
+                            <Font name="Arial" size="12.0" fx:id="x2" />
+                          </font>
+                        </Label>
+                        <TextField fx:id="textfield" layoutX="103.0" layoutY="231.0" prefWidth="224.0" />
+                        <Button fx:id="button2" font="$x1" layoutX="345.0" layoutY="255.0" mnemonicParsing="false" onAction="#eventbutton2" prefHeight="22.0" prefWidth="70.0" text="查询" />
+                        <TableView fx:id="tableview2" layoutX="0.0" layoutY="0.0" prefHeight="224.0" prefWidth="530.0">
+                          <columns>
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="89.0" text="科室名称" fx:id="KSMC2" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="89.0" text="医生编号" fx:id="YSBH2" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="87.0" text="医生名称" fx:id="YSMC2" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="88.0" text="号种类别" fx:id="HZLB2" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="87.0" text="挂号人次" fx:id="GHRC2" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="88.0" text="收入合计" fx:id="SRHJ2" />
+                          </columns>
+                        </TableView>
+                        <Label font="$x2" layoutX="46.0" layoutY="258.0" text="截止时间：" />
+                        <TextField id="textfield" fx:id="deadline" layoutX="103.0" layoutY="255.0" prefWidth="224.0" />
+                        <Button id="button2" fx:id="button3" font="$x1" layoutX="430.0" layoutY="255.0" mnemonicParsing="false" onAction="#eventbutton3" prefHeight="22.0" prefWidth="70.0" text="刷新" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
