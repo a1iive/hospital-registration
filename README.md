@@ -1,2 +1,4 @@
 # hospital-registration
-patient can login，register and return sign; doctor can examine registration information and income information; by java ,with sql server.
+patient can login，register and return sign; \<br>  
+doctor can examine registration information and income information;\<br>  
+by java ,with sql server.
